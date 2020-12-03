@@ -1,0 +1,65 @@
+/*start click*/
+
+.button ,.button2 {
+	@include transition-func(0.3s);
+	&:active{transform: scale(0.9);}
+}
+/*start click*/
+
+/*start hover*/
+@media(min-width:768px){ 
+.service .block{
+	animation: backinup 3s 1 linear ;
+}
+	
+.service i:hover{@include animation-func (pulse ,0.5s,infinite);}
+
+.pricing .price{
+	cursor: pointer;
+	@include transition-func(0.3s);
+	&:hover,&:focus,&:active{transform:translateY(-10px);}
+}
+
+.footer i{
+	cursor: pointer;
+	@include transition-func(0.3s);
+	&:hover{transform:translateY(-2px);}
+}
+
+.latest .cards .card { 
+	overflow:hidden;
+	img {
+	@include transition-func(0.5s);
+	&:hover{
+	cursor: pointer;
+	transform: scale(1.1);}
+	}
+}
+
+.navbar .navbar-nav .nav-item{
+	& .nav-link:hover:before,&.active .nav-link:before{
+			left: 0;
+			right: 0;}
+	.nav-link{
+	position: relative;
+	&:before{
+		content: "";
+		position:absolute;
+		z-index: 999;
+		left: 50%;
+		right: 50%;
+		bottom: 0;
+		background: $main;
+		height: 4px;
+		@include transition-func(0.3s);
+
+		}
+	
+	
+	}}
+.navbar .navbar-brand:hover{@include animation-func (pulse ,1s,infinite);}
+	
+}
+
+
+/*end hover*/

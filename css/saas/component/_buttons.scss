@@ -1,0 +1,83 @@
+.p{
+	color: $dark;
+	font-size: 20px;
+	margin: 15px auto;
+	@media (max-width:576px){
+		text-align: center;
+		padding-left: 0px;
+		padding-right: 0px;
+		line-height: 1.2;
+		width:100%;
+	}
+	@media (min-width:576px){
+		width:90%;
+		line-height: 1.5;
+		text-align: center;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	@media (min-width:768px){
+         line-height: 2;
+		 width:80%;
+	}
+	}
+
+.h{
+	font-weight: bold;
+	@media (max-width:576px){font-size: 30px;}
+	@media (min-width:576px){font-size: 35px;}
+	@media (min-width:768px){font-size: 40px;}
+	@media (min-width:992px){font-size: 50px;}	
+	}
+
+.button{
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    user-select: none;
+	color: #fff;
+	border: 1px solid transparent;
+	font-weight: bold;
+	border-radius: 0;
+	background-color: $main;
+	padding-right: 25px;
+	padding-left: 25px;
+	margin: 5px;
+	display: inline-block;
+	&:hover{color: $bluecolor;border-color: $bluecolor; text-decoration: none;}
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+	@media (min-width:577px){margin: 0;}
+	@media (max-width:576px){margin: auto;}
+	}
+	
+.button2{
+	background-color: #fff;
+	color: $bluecolor;
+	border-radius: 0;
+	padding: 10px 19px !important;
+	margin: 5px;
+	cursor: pointer;
+	border: 2px solid $bluecolor;
+	font-size: 14px;
+	transition: all .3s ease-in-out;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+	@media (max-width:767px){margin: 0;margin-bottom: 20px;}
+	&.active,&:hover {
+			color: #fff !important;
+			background-color: $main;
+			border: 2px solid $main;
+	}
+	&:active {	border: 2px solid $main; }
+	}
+
+/*start group padding & margin section*/
+.featured ,.latest ,.pricing ,.statistic,.service,.overview{
+	background-color:$background;
+	padding: $padding 30px;
+	padding: $padding 0px;
+	margin: $margin;
+	@media (max-width:767px){
+		padding: 50px 5px;
+		margin: 0;;}
+}
+/*end group */
