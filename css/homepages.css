@@ -11,6 +11,9 @@ body {
 
 * {
   box-sizing: border-box; }
+  a{
+    cursor: pointer;
+  }
 
 /*start navbar*/
 .navbar {
@@ -18,6 +21,7 @@ body {
   padding-top: 15px;
   padding-bottom: 15px; }
   .navbar .navbar-brand {
+    cursor: pointer;
     font-size: 40px;
     font-weight: bold;
     color: #08526d; }
@@ -25,7 +29,9 @@ body {
       font-weight: 100;
       color: #ed1d24; }
   .navbar li {
-    padding-left: 10px; }
+    padding-left: 10px; 
+    cursor: pointer;
+  }
     .navbar li a.nav-link {
       font-size: 14px;
       color: #08526d !important;
